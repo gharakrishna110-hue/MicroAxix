@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Base reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,102 +7,98 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
   padding: 20px;
 }
 
-/* Header styles */
+/* Neon glow effect */
+h1, h2, nav a, button {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+/* Header */
 header {
-  background-color: #004d99;
-  color: white;
+  position: relative;
+  background-color: #000033;
   padding: 20px;
   text-align: center;
+  border-bottom: 2px solid #00ffff;
 }
+
 .logo {
-  width: 160px;
-  height: auto;
-  display: block;
-  margin: 0 auto 15px auto;
-  border: 3px solid #e67300; /* Bengali-inspired orange */
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffff;
 }
 
-.logo:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-}
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 10px;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
 }
 
-/* Section styles */
+/* Sections */
 section {
   margin: 40px 0;
   padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffff;
 }
 
-section h2 {
-  color: #004d99;
-  margin-bottom: 15px;
-}
-
-/* Services list */
-#services ul {
-  list-style: disc;
+ul {
   margin-left: 20px;
 }
 
-/* Button styling */
+/* Buttons */
 button {
-  background-color: #004d99;
-  color: white;
-  border: none;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
   padding: 10px 20px;
-  margin-top: 15px;
-  cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #0066cc;
+  background-color: #00ffff;
+  color: #000033;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
 }
 
-/* Contact form */
+/* Form */
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 input, textarea {
+  background-color: #000033;
+  border: 1px solid #00ffff;
+  color: #e0e0e0;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
@@ -115,6 +111,5 @@ footer {
   text-align: center;
   margin-top: 40px;
   font-size: 0.9rem;
-  color: #666;
-
+  color: #888;
 }
