@@ -6,8 +6,12 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0d0d0d;
+  background-image: url('microaxix-logo.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 300px;
+  background-attachment: fixed;
+  background-color: #0d0d0d; /* dark base for neon contrast */
   color: #e0e0e0;
   padding: 20px;
 }
@@ -113,3 +117,4 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+
