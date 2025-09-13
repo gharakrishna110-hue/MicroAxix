@@ -20,7 +20,21 @@ header {
   padding: 20px;
   text-align: center;
 }
+.logo {
+  width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border: 3px solid #e67300; /* Bengali-inspired orange */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.logo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -102,4 +116,5 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
   color: #666;
+
 }
